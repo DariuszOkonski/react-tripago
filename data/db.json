@@ -1,7 +1,7 @@
 {
     "trips": [
         {
-            "title": "@ NIght Stay in Venice",
+            "title": "2 NIght Stay in Venice",
             "price": "£195"
         },
         {
@@ -15,6 +15,16 @@
         {
             "title": "3 Night Stay in New York",
             "price": "£325"
+        }
+    ],
+    "posts": [
+        {
+            "title": "hello 1",
+            "author": "author1"
+        },
+        {
+            "title": "hello 2",
+            "author": "author2"
         }
     ]
 }
