@@ -4,15 +4,15 @@ import './TripList.css';
 export default function TripList() {    
     
     const [trips, setTrips] = useState([]);
-
-    console.log(trips)
+    const [url, setUrl] = useState('http://localhost:3000/trips')
 
     useEffect(() => {
-        fetch('http://localhost:3000/trips')
+        fetch(url)
         .then(response => response.json())
         .then(json => setTrips(json));        
-    }, []);
+    }, [url]);
 
+    console.log(url)
     
     return (
         <div className="trip-list">
@@ -27,6 +27,20 @@ export default function TripList() {
                     })
                 }
             </ul>
+
+            <div className="filters">
+                <button onClick={() => setUrl('http://localhost:3000/trips?loc=europe')}>
+                    European Trips
+                </button>
+
+                <button onClick={() => setUrl('http://localhost:3000/trips?loc=america')}>
+                    American Trips
+                </button>
+                
+                <button onClick={() => setUrl('http://localhost:3000/trips')}>
+                    All Trips
+                </button>
+            </div>
         </div>
     )
 }
