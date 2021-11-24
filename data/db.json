@@ -2,29 +2,35 @@
     "trips": [
         {
             "title": "2 NIght Stay in Venice",
-            "price": "£195"
+            "price": "£195",
+            "id": "1"
         },
         {
             "title": "3 Night Stay in Paris",
-            "price": "£295"
+            "price": "£295",
+            "id": "2"
         },
         {
             "title": "4 Night Stay in London",
-            "price": "£345"
+            "price": "£345",
+            "id": "3"
         },
         {
             "title": "3 Night Stay in New York",
-            "price": "£325"
+            "price": "£325",
+            "id": "4"
         }
     ],
     "posts": [
         {
             "title": "hello 1",
-            "author": "author1"
+            "author": "author1",
+            "id": "1"
         },
         {
             "title": "hello 2",
-            "author": "author2"
+            "author": "author2",
+            "id": "2"
         }
     ]
 }
